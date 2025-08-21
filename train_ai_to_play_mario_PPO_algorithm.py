@@ -5,9 +5,11 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 
 # dependency hell
-# pip install 'numpy<2.0.0'
 # pip install setuptools==65.5.0 "wheel<0.40.0"
+# pip install gym==0.21.0
 # pip install gym-super-mario-bros==7.3.0
+# pip install stable-baselines3[extra]==1.6.0
+# pip install 'numpy<2.0.0'
 
 def make_env():
     def _init():
